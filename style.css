@@ -219,7 +219,7 @@ section:nth-child(2n+1){
     /* border: 2px solid black; */
     position: relative;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 .portfolio-desc{
     top:0;
@@ -233,20 +233,29 @@ section:nth-child(2n+1){
     transition: all 1s;
     border-radius: inherit;
     padding: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .portfolio:hover .portfolio-desc{
     visibility: visible;
-    opacity: 0.8;
+    opacity: 0.3;
     cursor: pointer;
-    box-shadow: 0px 0px 4px 6px #c5f6fa;
+    box-shadow: 0px 0px 2px 3px #ebedee;
+    transform: scale(1.1);
 }
-.portfolio-desc p{
+.portfolio-desc h2{
     margin-left: 10px;
     margin-top: 15px;
     font-size: 1.3rem;
     font-weight: 600;
-    color: #f8f9fa;
+    color: black;
 }
+
+.project{
+    text-align: center;
+}
+ 
 .portfolio img{
     height: 100%;
     width: 100%;
@@ -258,7 +267,6 @@ section:nth-child(2n+1){
     background: linear-gradient(70deg,#2857a4,#7b5084 120%);
     height: auto;
     width: 100%;
-    
  }
  #contact span{
     color: #fff;
@@ -472,5 +480,3 @@ section:nth-child(2n+1){
     left: 3%;
     background-repeat: no-repeat;
  }
-
-
